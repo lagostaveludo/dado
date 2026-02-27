@@ -1,6 +1,6 @@
 {
   "name": "dado",
-  "port": 5006,
+  "port": 5011,
   "database": false,
   "logto": false,
   "env": {}

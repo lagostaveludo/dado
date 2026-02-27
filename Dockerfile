@@ -3,7 +3,7 @@ WORKDIR /app
 COPY package.json ./
 RUN npm install --production
 COPY . .
-EXPOSE 5006
+EXPOSE 5011
 HEALTHCHECK --interval=15s --timeout=5s --retries=3 --start-period=10s \
-  CMD wget -q -O /dev/null http://127.0.0.1:5006/api/health || exit 1
+  CMD wget -q -O /dev/null http://127.0.0.1:5011/api/health || exit 1
 CMD ["node", "server.js"]
